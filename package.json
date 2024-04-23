@@ -2,20 +2,26 @@
   "name": "case_mind_backend",
   "version": "1.0.0",
   "main": "index.js",
+  "repository": "https://github.com/JoseMGomes/mind_estoque_backend.git",
+  "author": "José Lucas <gomessze03@gmail.com>",
+  "license": "MIT",
   "scripts": {
-    "dev": "nodemon src/index.ts",
-    "build": "tsc -p ."
+    "dev": "nodemon src/server.js",
+    "dev:debug": "nodemon --inspect src/server.js"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "description": "",
   "dependencies": {
-    "@types/express": "^4.17.21",
-    "@types/node": "^20.12.7",
+    "bcryptjs": "^2.4.3",
     "express": "^4.19.2",
+    "jsonwebtoken": "^9.0.2",
+    "multer": "^1.4.5-lts.1",
+    "mysql2": "^3.9.7",
+    "path": "^0.12.7",
+    "sequelize": "^6.37.3",
+    "yup": "^1.4.0"
+  },
+  "devDependencies": {
     "nodemon": "^3.1.0",
-    "ts-node": "^10.9.2",
-    "typescript": "^5.4.5"
+    "sequelize-cli": "^6.6.2",
+    "sucrase": "^3.35.0"
   }
 }
