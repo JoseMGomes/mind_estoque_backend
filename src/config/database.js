@@ -2,7 +2,7 @@ module.exports = {
     dialect: 'mysql',
     host: 'localhost',
     username: 'root',
-    password: 'password',
+    password: '123456',
     database: 'mind_estoque',
     define: {
         timestamps: true,
